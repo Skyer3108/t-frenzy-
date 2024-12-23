@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: '20.x'
 
-      - name: npm install, build, and test
+      - name: Install dependencies with legacy-peer-deps
         run: |
          cd frontend  # Change directory to 'frontend' if package.json is there
           npm install
