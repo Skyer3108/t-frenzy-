@@ -47,29 +47,30 @@ const Update=()=>{
 
     }
 
-    const getData=async()=>{
+   
+
+    useEffect(()=>{
+        const getData=async()=>{
 
         
 
-        console.log(id)
-
-
-        const res=await axios.get(`http://localhost:4000/api/user/getuser/${id}`)
-          const resdata=res.data.data
-        if(res.status){
-             setData({
-                ...data,
-                name:resdata.name,
-                email:resdata.email,
-                age:resdata.age
-             })
-
+            console.log(id)
+    
+    
+            const res=await axios.get(`http://localhost:4000/api/user/getuser/${id}`)
+              const resdata=res.data.data
+            if(res.status){
+                 setData({
+                    ...data,
+                    name:resdata.name,
+                    email:resdata.email,
+                    age:resdata.age
+                 })
+    
+            }
         }
-    }
-
-    useEffect(()=>{
        getData()
-    },[getData])
+    },[])
 
     return(
         <div className="container my-2">
