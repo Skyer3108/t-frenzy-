@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/92ae011c-cdf4-4aef-a62e-634c5a6e5d2b/resourceGroups/f-frenzy-app/providers/Microsoft.Web/sites/t-frenzy-api-client",
+    "appService.deploySubpath": "frontend"
+}
