@@ -69,7 +69,7 @@ const Update=()=>{
 
     useEffect(()=>{
        getData()
-    },[])
+    },[getData])
 
     return(
         <div className="container my-2">
