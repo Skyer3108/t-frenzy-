@@ -70,7 +70,7 @@ const Update=()=>{
             }
         }
        getData()
-    },[])
+    },[data,id])
 
     return(
         <div className="container my-2">
